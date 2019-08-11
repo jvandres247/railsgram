@@ -10,6 +10,7 @@ gem 'jquery-rails'
 gem 'popper_js', '~> 1.14.5'
 gem 'carrierwave'
 gem 'mini_magick'
+gem 'devise', git: 'git://github.com/plataformatec/devise.git'
 # Use postgresql as the database for Active Record
 gem 'pg', '>= 0.18', '< 2.0'
 # Use Puma as the app server
