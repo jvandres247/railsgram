@@ -1,4 +1,6 @@
 class HomeController < ApplicationController
   def index
-  end
+    @images = Image.order(id: :desc)
+                   .where user_id: current_user.id
+end
 end

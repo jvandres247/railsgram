@@ -1,2 +1,29 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<% if user_signed_in? %>
+    <div class="row">
+        <div class="col-4">
+        
+        </div>
+        <div class="col-8">
+            <h1><%= current_user.name %></h1>
+            <div>
+                <ul class="nav">
+                    <li class="margin-right">
+                        <p><strong><%= @images.count %></strong> Publicaciones</p>
+                    </li>
+                    <li class="margin-right">
+                        <p><strong>150</strong> Seguidos</p>
+                    </li>
+                    <li class="margin-right">
+                        <p><strong>150</strong> Siguiendo</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <%= render @images %>
+    </div>
+<% else %>
+    <h1>RailsGram</h1>
+<% end %>
+
