@@ -11,6 +11,7 @@ gem 'popper_js', '~> 1.14.5'
 gem 'carrierwave'
 gem 'mini_magick'
 gem 'devise', git: 'git://github.com/plataformatec/devise.git'
+gem 'will_paginate', '~> 3.1.0'
 # Use postgresql as the database for Active Record
 gem 'pg', '>= 0.18', '< 2.0'
 # Use Puma as the app server

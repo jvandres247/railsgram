@@ -20,9 +20,10 @@
             </div>
         </div>
     </div>
-    <div class="row">
+    <div class="row" id="images">
         <%= render @images %>
     </div>
+    <%= will_paginate @images %>
 <% else %>
     <h1>RailsGram</h1>
 <% end %>
